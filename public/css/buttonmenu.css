@@ -1,0 +1,129 @@
+body,html{margin:0;padding:0;height:100%;}
+body{background:#E3DFD2;box-shadow: inset 0 0 20vmin 0 #585247;}
+.wrap{
+  position:relative;
+  width:80vmin; height:80vmin;
+  margin:0 auto;
+  background:inherit;
+  transform:scale(0.2) translatez(0px);
+  opacity:0;
+  transition:transform .5s, opacity .5s;
+}
+a{
+  position:absolute;
+  left:0; top:0;
+  width:30%; height:30%;
+  overflow:hidden;
+  transform:scale(.5) translateZ(0px);
+  background:#585247;
+}
+a.one:hover {
+  background: green;
+}
+a.two:hover {
+    background: purple;
+  }
+a.three:hover {
+    background: orange;
+  }
+a.four:hover {
+    background: blue;
+}
+a.five:hover {
+    background: lightblue;
+}
+a.six {
+    background: black;
+} 
+a.six:hover {
+    background: black;
+} 
+a div{
+  height:100%;
+  background-size:cover;
+  opacity:.5;
+  transition:opacity .5s;
+  border-radius:inherit;
+}
+a:nth-child(1){
+  border-radius:50%;
+  left: 16%;
+  top: 9%;
+  transform-origin: 110% 110%;
+  transition:transform .4s .15s;
+}
+a:nth-child(1) div{
+  background-image:url('img/cup1.jpg');
+}
+a:nth-child(2){
+  border-radius:50%;
+  left:54%;
+  top: 9%;
+  transform-origin: -10% 110%;
+  transition:transform .4s .2s;
+}
+a:nth-child(2) div{
+  background-image:url('img/cup1.jpg');
+}
+a:nth-child(3){
+  border-radius:50%;
+  top:42%;
+  left: 3%;
+  transform-origin: 110% -10%;
+  transition:transform .4s .25s;
+}
+a:nth-child(3) div{
+  background-image:url('img/cup1.jpg');
+}
+a:nth-child(4){
+  border-radius:50%;
+  top:67%; left:35%;
+  transform-origin: -10% -10%;
+  transition:transform .4s .3s;
+}
+a:nth-child(4) div{
+  background-image: url('img/cup1.jpg');
+}
+a:nth-child(5){
+    border-radius:50%;
+    top:42%; left:67%;
+    transform-origin: -50% -50%;
+    transition:transform .4s .3s;
+  }
+  a:nth-child(5) div{
+    background-image: url('img/cup1.jpg');
+  }
+a:nth-child(6){
+  width:30%;height:30%;
+  left:35%; top:35%;
+  border-radius:50%;
+  box-shadow:0 0 0 1vmin #E3DFD2;
+  transform:scale(1);
+}
+a:nth-child(6) div{
+   text-align: center;
+   padding-top: 100px;
+  background-image: url('img/cup1.jpg');
+}
+span{
+  position:relative;
+  display:block;
+  margin:0 auto;
+  top:45vmin;
+  width:10vmin; height:10vmin;
+  border-radius:100%;
+  background:black;
+  transform:translateZ(0px);
+}
+
+span:hover + .wrap, .wrap:hover{
+  transform:scale(.8) translateZ(0px);
+  opacity:1;
+}
+span:hover + .wrap a, .wrap:hover a{
+  transform:scale(1) translatez(0px);
+}
+a:hover div{
+  opacity:1;
+  transform:translatez(0px);
+}
